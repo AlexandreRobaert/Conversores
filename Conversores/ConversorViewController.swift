@@ -9,10 +9,10 @@ import UIKit
 
 class ConversorViewController: UIViewController {
 
-    @IBOutlet weak var labelCategoriaUnidades: UILabel!
-    @IBOutlet weak var tfValor: UITextField!
-    @IBOutlet weak var lbResultado: UILabel!
-    @IBOutlet weak var labelUnidadeResultado: UILabel!
+    @IBOutlet weak var lbUnitCategorie: UILabel!
+    @IBOutlet weak var tfValue: UITextField!
+    @IBOutlet weak var lbResult: UILabel!
+    @IBOutlet weak var lbUnityResult: UILabel!
     
     
     override func viewDidLoad() {

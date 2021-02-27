@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1E7-8I-Ssx" userLabel="View Resultado">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1E7-8I-Ssx" userLabel="View Result">
                                 <rect key="frame" x="0.0" y="448" width="414" height="448"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiD-2W-uAZ">
@@ -107,10 +107,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="labelCategoriaUnidades" destination="taN-Kp-Z3r" id="Ugm-yB-cun"/>
-                        <outlet property="labelUnidadeResultado" destination="DKM-ng-qjg" id="NV4-Av-bEX"/>
-                        <outlet property="lbResultado" destination="LiD-2W-uAZ" id="bAY-yh-gff"/>
-                        <outlet property="tfValor" destination="v5O-Cw-1KC" id="MBp-rk-l7u"/>
+                        <outlet property="lbResult" destination="LiD-2W-uAZ" id="bAY-yh-gff"/>
+                        <outlet property="lbUnitCategorie" destination="taN-Kp-Z3r" id="Ugm-yB-cun"/>
+                        <outlet property="lbUnityResult" destination="DKM-ng-qjg" id="NV4-Av-bEX"/>
+                        <outlet property="tfValue" destination="v5O-Cw-1KC" id="MBp-rk-l7u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
