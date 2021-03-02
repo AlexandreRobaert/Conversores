@@ -20,8 +20,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1E7-8I-Ssx" userLabel="View Result">
                                 <rect key="frame" x="0.0" y="448" width="414" height="448"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiD-2W-uAZ">
-                                        <rect key="frame" x="182.5" y="80" width="49" height="96"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="LiD-2W-uAZ">
+                                        <rect key="frame" x="16" y="80" width="382" height="96"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                         <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
@@ -35,8 +35,10 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="LiD-2W-uAZ" secondAttribute="trailing" constant="16" id="A8V-Uw-QtK"/>
                                     <constraint firstItem="LiD-2W-uAZ" firstAttribute="top" secondItem="1E7-8I-Ssx" secondAttribute="top" constant="80" id="BVS-Gv-tZB"/>
                                     <constraint firstItem="DKM-ng-qjg" firstAttribute="centerX" secondItem="1E7-8I-Ssx" secondAttribute="centerX" id="PpE-LD-I16"/>
+                                    <constraint firstItem="LiD-2W-uAZ" firstAttribute="leading" secondItem="1E7-8I-Ssx" secondAttribute="leading" constant="16" id="Zl8-12-FFm"/>
                                     <constraint firstItem="LiD-2W-uAZ" firstAttribute="centerX" secondItem="1E7-8I-Ssx" secondAttribute="centerX" id="pHK-tX-mUP"/>
                                     <constraint firstItem="DKM-ng-qjg" firstAttribute="top" secondItem="LiD-2W-uAZ" secondAttribute="bottom" constant="20" id="yIg-Ma-ZzJ"/>
                                 </constraints>
@@ -48,13 +50,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYB-qt-AZc">
-                                <rect key="frame" x="334.5" y="43" width="30" height="54"/>
+                                <rect key="frame" x="339" y="43" width="30" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="≫">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="proximaUnidade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iHN-mJ-QiS"/>
+                                    <action selector="showNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iHN-mJ-QiS"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v5O-Cw-1KC">
@@ -71,27 +73,27 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="converter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZL7-JX-LZc"/>
+                                    <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZL7-JX-LZc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAF-wV-wLj">
+                            <button opaque="NO" alpha="0.5" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAF-wV-wLj">
                                 <rect key="frame" x="287" y="396" width="107" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Firenheint">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="converter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tci-yw-cNf"/>
+                                    <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tci-yw-cNf"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JYB-qt-AZc" secondAttribute="trailing" constant="45" id="2Ch-Ro-O9v"/>
                             <constraint firstItem="s2R-aR-dph" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2mX-gK-9z6"/>
                             <constraint firstItem="v5O-Cw-1KC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3DC-an-xoM"/>
                             <constraint firstItem="1E7-8I-Ssx" firstAttribute="top" secondItem="wAF-wV-wLj" secondAttribute="bottom" constant="10" id="3Dz-Ey-syR"/>
-                            <constraint firstItem="JYB-qt-AZc" firstAttribute="leading" secondItem="taN-Kp-Z3r" secondAttribute="trailing" constant="35" id="5mL-9M-0kd"/>
                             <constraint firstItem="JYB-qt-AZc" firstAttribute="centerY" secondItem="taN-Kp-Z3r" secondAttribute="centerY" id="6xC-7o-Vfg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wAF-wV-wLj" secondAttribute="trailing" constant="20" id="CBj-X9-7Rd"/>
                             <constraint firstItem="1E7-8I-Ssx" firstAttribute="top" secondItem="s2R-aR-dph" secondAttribute="bottom" constant="10" id="ERh-Pm-mxZ"/>
@@ -107,6 +109,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btUnit1" destination="s2R-aR-dph" id="Mv3-92-96q"/>
+                        <outlet property="btUnit2" destination="wAF-wV-wLj" id="qX9-6v-hOF"/>
                         <outlet property="lbResult" destination="LiD-2W-uAZ" id="bAY-yh-gff"/>
                         <outlet property="lbUnitCategorie" destination="taN-Kp-Z3r" id="Ugm-yB-cun"/>
                         <outlet property="lbUnityResult" destination="DKM-ng-qjg" id="NV4-Av-bEX"/>
